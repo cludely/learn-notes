@@ -1,0 +1,11 @@
+ul>li {
+	list-style: none;
+}
+
+
+
+#dv {
+	background: url('../images/1.jpg');
+	width: 200px;
+	height: 200px;
+}

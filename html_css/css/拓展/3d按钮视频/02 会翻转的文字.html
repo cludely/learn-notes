@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	body{font:8rem "微软雅黑"; padding: 200px;}
+	.zhi{margin:0.2rem;color:#369; position: relative;}
+	.zhi:before,.zhi:after{
+		content:attr(data-zhi);
+		position: absolute;
+		top:0;
+		left:0;
+		transform-origin:left top;
+		-webkit-transform-origin:left top;
+		-o-transform-origin:left top;
+		-ms-transform-origin:left top;
+
+		transition:all 0.3s ease 0s;
+
+	}
+	.zhi:before{
+		color:#fff;
+		z-index: 3;
+		transform:rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+	}
+	.zhi:after{
+		color:rgba(0,0,0,0.2);
+		transform:scale(1.1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		z-index:2;
+	}
+	.zhi:hover:before{
+		color:#fafafa;
+		transform:rotateX(0deg) rotateY(-40deg) rotateZ(0deg) skew(0deg,1deg);
+	}
+	.zhi:hover:after{
+		transform:scale(1.1,1) rotateX(0deg) rotateY(-40deg) rotateZ(0deg) skew(0deg,20deg);
+	}
+	</style>
+
+</head>
+<body>
+	<span class="zhi" data-zhi="传">传</span>
+	<span class="zhi" data-zhi="智">智</span>
+	<span class="zhi" data-zhi="播">播</span>
+	<span class="zhi" data-zhi="客">客</span>
+</body>
+</html>

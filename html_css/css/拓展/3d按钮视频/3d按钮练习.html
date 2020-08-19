@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+	.box{
+		width: 400px;
+		text-align: center;
+		
+		height: 200px;
+		background: #ccf;
+		margin:100px auto;
+		/* border-radius: 水平半径/垂直半径 */
+		/* border-radius: 50%; */
+		border-radius: 200px/100px;
+		-webkit-border-radius:50%;
+		/* box-shadow: 水平阴影 垂直阴影 模糊距离  阴影尺寸 颜色 内外阴影 */
+		box-shadow: 0  -15px  15px  #88f inset,10px -15px 15px #44f inset,-10px -15px 15px #fff inset,0 15px #88f,-35px 40px 5px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 0  -15px  15px  #88f inset,10px -15px 15px #44f inset,-10px -15px 15px #fff inset,0 15px #88f,-35px 40px 5px rgba(0,0,0,0.3);
+		-o-box-shadow: 0  -15px  15px  #88f inset,10px -15px 15px #44f inset,-10px -15px 15px #fff inset,0 15px #88f,-35px 40px 5px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0  -15px  15px  #88f inset,10px -15px 15px #44f inset,-10px -15px 15px #fff inset,0 15px #88f,-35px 40px 5px rgba(0,0,0,0.3);
+      font:55px "微软雅黑";
+      transition:all 0.3s ease-in 0s;
+       -webkit-transition:all 0.3s ease-in 0s;
+         -o-transition:all 0.3s ease-in 0s;
+          -moz-transition:all 0.3s ease-in 0s;
+     
+
+	}
+	.content{
+		color:#88f;
+		line-height: 150px;
+		transform:scale(1,0.8); /*  让文字扁一点 */
+		/* text-shadow: 水平阴影 垂直阴影 模糊距离 颜色; */
+		text-shadow:3px -3px 1px #44f,-3px 3px 1px #fff;
+	}
+	.txt{
+		text-align: center;
+	}
+	.box:hover{
+			box-shadow:
+			 0  -15px  15px  #88f inset,
+			10px -15px 15px #44f inset,
+			-10px -15px 15px #fff inset,
+			0 3px #88f,
+			-10px 15px 5px rgba(0,0,0,0.3);
+			-webkit-box-shadow:
+			 0  -15px  15px  #88f inset,
+			10px -15px 15px #44f inset,
+			-10px -15px 15px #fff inset,
+			0 3px #88f,
+			-10px 15px 5px rgba(0,0,0,0.3);
+			-o-box-shadow:
+			 0  -15px  15px  #88f inset,
+			10px -15px 15px #44f inset,
+			-10px -15px 15px #fff inset,
+			0 3px #88f,
+			-10px 15px 5px rgba(0,0,0,0.3);
+			-moz-box-shadow:
+			 0  -15px  15px  #88f inset,
+			10px -15px 15px #44f inset,
+			-10px -15px 15px #fff inset,
+			0 3px #88f,
+			-10px 15px 5px rgba(0,0,0,0.3);
+			margin-top:150px;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		 <div class="content">传智播客</div> 
+	</div>
+	<div class="txt">学习挖掘机哪家强，中国山东 找蓝翔   学习代码哪家好  传智播客任你找</div>
+</body>
+</html>

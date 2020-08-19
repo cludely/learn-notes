@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>点击按钮禁用文本框</title>
+	<style type="text/css">
+		* {
+			margin: auto;
+			padding:0px;
+		}
+		#dv {
+			width: 200px;
+			height: 400px;
+			border: 2px solid pink;
+		}
+		li {
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+<input type="button" name="" id="btn" value="ss">
+<div id = "dv">
+	
+</div>
+
+
+<script type="text/javascript">
+	var arr = ["我爱你","海贼王","你好旧时光","死神火影"]
+	document.getElementById("btn").onclick = function ( ) {
+		var ulObj = document.createElement("ul");
+		document.getElementById("dv").appendChild(ulObj);
+		for(var i=0;i<arr.length;i++) {
+			var liObj = document.createElement("li");
+			liObj.innerText = arr[i];
+			ulObj.appendChild(liObj);
+			liObj.onmouseover = mouseOverHandle;
+			liObj.onmouseout = mouseOutHandle;
+		}
+	}
+
+	function mouseOverHandle( ) {
+		this.style.backgroundColor="#ccc";
+	}
+	function mouseOutHandle( ) {
+		this.style.backgroundColor="";
+	}
+</script>
+</body>
+</html>
